@@ -12,7 +12,8 @@ public class Gerente extends Funcionario{
         return false;
     }
 
-    // public double getBonificacao(){
-    //     return this.salario;
-    // }
+    public double getBonificacao(){
+        System.out.println("Chamando a bonificação do Gerente");
+        return super.getBonificacao() + super.getSalario();
+    }
 }
